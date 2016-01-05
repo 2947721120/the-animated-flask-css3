@@ -1,0 +1,28 @@
+.flask_center{
+	
+	right: 31%;
+	
+	.little_circle_white{
+		@include animation_circle_settings(3000ms, 0ms);
+	}
+	
+	.little_circle_purpure{
+		@include animation_circle_settings(3000ms, 200ms);
+	}
+	
+	.little_circle_white, .little_circle_purpure{
+		left: 50%;
+	}		
+	
+	.little_circle_blue{
+		@include animation_circle_settings(3000ms, 500ms);
+	}
+	
+	.small_circle{
+		@include animation_circle_settings(3000ms, 1400ms);
+	}	
+	
+	.small_circle, .little_circle_blue{
+		left: 45%;
+	}
+}

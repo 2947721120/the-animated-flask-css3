@@ -1,0 +1,84 @@
+@-webkit-keyframes circle{
+	0%{
+		@include translateY_scale(20px, 1);
+		opacity: 1
+	}
+
+	85%{
+		opacity: 0
+	}
+	
+	100%{
+		@include translateY_scale(-200px, 0);
+		opacity: 0
+	}
+}
+
+@keyframes circle{
+	
+	0%{
+		@include translateY_scale(20px, 1);
+		opacity: 1
+	}
+
+	85%{
+		opacity: 0
+	}
+	
+	100%{
+		@include translateY_scale(-200px, 0);
+		opacity: 0
+	}
+}
+
+@-webkit-keyframes rotate{
+
+	0%{
+		@include translateY_scale_rotate(20px, 1, 0);
+		opacity: 1
+	}
+	
+	100%{
+		opacity: 0;
+		@include translateY_scale_rotate(-200px, 1, 360deg);
+	}
+}
+
+@keyframes rotate{
+
+	0%{
+		@include translateY_scale_rotate(20px, 1, 0);
+		opacity: 1
+	}
+	
+	100%{
+		opacity: 0;
+		@include translateY_scale_rotate(-200px, 1, 360deg);
+	}
+}
+
+@keyframes animation_d{
+
+	0%{
+		@include translateY_scale_rotate(-160px, 0, 0);
+		opacity: 1
+	}
+	
+	100%{
+		opacity: 0;
+		@include translateY_scale_rotate(-200px, 1, 360deg);
+	}
+}
+
+@-webkit-keyframes animation_d{
+
+	0%{
+		@include translateY_scale_rotate(-160px, 0, 0);
+		opacity: 1
+	}
+	
+	100%{
+		opacity: 0;
+		@include translateY_scale_rotate(-200px, 1, 360deg);
+	}
+}

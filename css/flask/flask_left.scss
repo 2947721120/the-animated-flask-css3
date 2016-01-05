@@ -1,0 +1,38 @@
+.flask_left{
+
+	left: 3%;
+	
+	.small_circle{
+		@include animation_circle_settings(2000ms, 100ms);
+	}
+	
+	.little_circle_white{
+		left: 48%;
+		@include animation_circle_settings(2000ms, 0ms);
+	}
+
+	.little_circle_purpure{
+		left: 50%;
+		@include animation_circle_settings(2000ms, 200ms);
+	}
+	
+	.little_circle_blue{
+		left: 45%;
+		@include animation_circle_settings(2000ms, 300ms);
+	}
+	
+	.element4{
+		left: 45%;
+		@include animation_circle_settings(2000ms, 600ms);
+	}
+	
+	.element5{
+		left: 47%;
+		@include animation_circle_settings(2000ms, 900ms);
+	}
+	
+	.element6{
+		top: 5%;
+		@include animation_circle_settings(3000ms, 1000ms);
+	}
+}

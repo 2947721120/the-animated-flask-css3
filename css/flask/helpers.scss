@@ -1,0 +1,87 @@
+@mixin rotate($value){
+    -webkit-transform: rotate($value);
+    transform: rotate($value);
+}
+
+@mixin transform_origin($parametr1, $parametr2){
+	-webkit-transform-origin: $parametr1  $parametr2;
+	transform-origin: $parametr1  $parametr2;
+}
+
+@mixin skew($value1){
+	-webkit-transform: skew($value1);
+	transform: skew($value1);
+}
+
+@mixin translateY_scale($y, $value1){
+	-webkit-transform: translateZ(0px) translateY($y) scale($value1);
+	transform: translateZ(0px) translateY($y) scale($value1);
+}
+
+@mixin translateY_scale_rotate($y, $value1, $value2){
+	-webkit-transform: translateZ(0px) translateY($y) scale($value1) rotateZ($value2);
+	transform: translateZ(0px) translateY($y) scale($value1)  rotateZ($value2);
+}
+
+@mixin flask_element($background, $width, $height, $enable_top, $value1, $enable, $value2, $z_index){
+
+    background-color: $background;
+    width: $width;
+    height: $height;
+	
+    position: absolute;
+	z-index: $z_index;
+	
+	@if $enable == 'right'{
+
+		right: $value2;
+
+    }@else{
+		
+        left: $value2;
+		
+    }
+   
+	@if $enable_top == 'top'{
+
+		top: $value1;
+
+    }@else{
+		
+        bottom: $value1;
+		
+    }
+}
+
+@mixin animation($name, $duration, $delay){
+
+	-webkit-animation-name: $name; 
+	animation-name: $name;
+	
+	-webkit-animation-duration: $duration;
+	animation-duration: $duration;
+	
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	
+    -webkit-animation-delay: $delay;
+    animation-delay: $delay;
+}
+
+@mixin animation_circle($name){
+
+	-webkit-animation-name: $name; 
+	animation-name: $name;
+	
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+  
+@mixin animation_circle_settings($duration, $delay){
+	
+	-webkit-animation-duration: $duration;
+	animation-duration: $duration;
+	
+    -webkit-animation-delay: $delay;
+    animation-delay: $delay;
+} 

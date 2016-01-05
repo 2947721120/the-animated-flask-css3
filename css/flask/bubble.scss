@@ -1,0 +1,72 @@
+/*
+ *bubble
+ */
+
+.circle{
+
+	border-radius: 50%;
+	border: 1px solid #fff;
+	
+	position: absolute;
+	left: 48%;
+	top: 35px;
+	
+	@include animation_circle(circle);
+	@include animation_circle_settings(5s, 0s);
+}
+ 
+.little_circle{
+	width: 5px;
+	height: 5px;
+	margin-left: 4px;
+}
+
+.little_circle_white{
+	background-color: #fff;
+}
+
+.little_circle_purpure{
+	background-color: #6c49ac;
+	border: 1px solid #6c49ac;
+}
+
+.little_circle_blue{
+	background-color: #117fba;
+	border: 1px solid #117fba;
+}
+
+.small_circle{
+	width: 20px;
+	height: 20px;
+}
+
+.middle_circle{
+	width: 45px;
+	height: 45px;
+	margin-left: 2px;
+	left: 42%;
+}
+
+.d{
+	width: 120px;
+	height: 120px;
+	
+	border-width: 3px;
+	background: url("../images/sprites.png") no-repeat -35% 45%;
+	
+	@include translateY_scale_rotate(-160px, 0, 0);
+	@include animation(animation_d, 5500ms, 900ms);
+}
+
+.l{
+
+	width: 45px;
+	height: 45px;
+	background: url("../images/sprites.png") no-repeat 110% 45%;
+	
+	position: absolute;
+	top: 25px;
+	left: 42%;
+	
+	@include animation(rotate, 5000ms, 400ms);
+}

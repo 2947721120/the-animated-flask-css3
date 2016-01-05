@@ -1,0 +1,23 @@
+.flask_right{
+	
+	right: 0;
+	
+	.small_circle{
+		@include animation_circle_settings(4200ms, 400ms);
+	}
+	
+	.little_circle_white{
+		left: 48%;
+		@include animation_circle_settings(4200ms, 0ms);
+	}
+
+	.little_circle_purpure{
+		left: 52%;
+		@include animation_circle_settings(4200ms, 200ms);
+	}
+	
+	.little_circle_blue{
+		left: 45%;
+		@include animation_circle_settings(4200ms, 600ms);
+	}
+}

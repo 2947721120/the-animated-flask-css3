@@ -1,0 +1,31 @@
+{
+  "name": "the-animated-flask-css3",
+  "version": "1.1.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-css-base64": "^1.3.4",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-html-minifier": "^0.1.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melnik909/the-animated-flask-css3.git"
+  },
+  "keywords": [
+    "css",
+    "animation",
+    "keyframes"
+  ],
+  "author": "stas melnikov melnik909@ya.ru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/melnik909/the-animated-flask-css3/issues"
+  },
+  "homepage": "https://github.com/melnik909/the-animated-flask-css3#readme"
+}

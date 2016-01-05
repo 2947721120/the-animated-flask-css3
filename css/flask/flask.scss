@@ -1,0 +1,292 @@
+
+@import 'helpers.scss';
+$basic_color: #292548;  
+   
+body{
+	background-color: $basic_color;
+}
+
+/*
+ *flask
+ */
+
+.flask{
+    height: 405px;
+    width: 368px;
+	position: absolute;
+	bottom: 0;
+}
+
+.flask_throat{
+
+	overflow: hidden;
+    height: 155px;
+	width: 62px;
+    
+    position: absolute;
+	left: 152px;
+    top: 0;
+}
+
+.flask_throat_one{
+
+    position: absolute;
+	
+    @include rotate(24deg);
+    @include transform_origin(right, top);
+	@include flask_element(#5c30ae, 150px, 50px, top, 110px, right, -26px, 3);
+ 	@include animation(animation_bg_element6, 5s, 0s);
+}
+
+.flask_throat_two{
+
+    position: absolute;
+	
+    @include rotate(20deg);
+    @include transform_origin(right, top);
+	@include flask_element(#37acdd, 150px, 60px, top, 35px, right, -35px, 3);
+ 	@include animation(animation_bg_element5, 5s, 0s);
+}
+
+.flask_throat_three{
+    position: absolute;
+	@include flask_element(#5c30ae, 100%, 50px, bottom,0, right, 0, 3);
+ 	@include animation(animation_bg_element6, 5s, 0s);
+}
+
+.flask_throat_four{
+
+    position: absolute;
+	
+    @include rotate(20deg);
+    @include transform_origin(right, top);
+	@include flask_element(#6c49ac, 150px, 20px, top, 100px, right, -45px, 3);
+ 	@include animation(animation_bg_element7, 5s, 0s);
+}
+
+.flask_bottom{
+    bottom: 0;
+    position: absolute;
+}
+
+.big_triangle{
+
+    overflow: hidden;
+    position: relative;
+    width: 368px;
+	height: 250px;
+	
+	&:before, &:after{
+		
+		content: "";
+		display: block;
+		
+		width: 0;
+		height: 0;
+		border-top: 250px solid $basic_color;
+		
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 100;
+	}
+
+	&:before{
+		border-right: 152px solid transparent;
+		left: 0;
+	}
+
+	&:after{
+		border-left: 154px solid transparent;
+		right: 0;
+	}
+}
+
+.flask_bottom_one{
+
+	width: 0;
+    height: 0;
+
+    border-bottom: 55px solid #3a2481;
+    border-left: 32px solid transparent;
+    border-right: 42px solid transparent;
+
+    position: absolute;
+    bottom: 0;
+	z-index: 4;
+	
+	@include animation(animation_bg_element1,5s, 0s)
+}
+
+.flask_bottom_two{
+
+    border-bottom: 165px solid #4266c0;
+    border-left: 93px solid transparent;
+    border-right: 200px solid transparent;
+	
+	width: 0;
+    height: 0;
+	
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+	
+	@include animation(animation_bg_element2,5s, 0s)
+}
+
+.flask_bottom_five{
+
+    position: absolute;
+	
+	@include flask_element(#4248c0, 100%, 75px, bottom, 18px, left, 50px, 3);
+    @include rotate(24deg);
+    @include transform_origin(left, top);
+	@include animation(animation_bg_element3, 5s, 0s);
+	
+}
+
+.flask_bottom_six{
+    position: absolute;
+	@include flask_element(#37acdd, 100%, 170px, bottom, 0, right, 0, 1);
+	@include animation(animation_bg_element4, 5s, 0s);
+}
+
+.flask_bottom_seven{
+
+    position: absolute;
+	
+	@include flask_element(#1493c8, 100%, 218px, bottom, 24px, right, -95px, 3);
+	@include rotate(24deg);
+    @include transform_origin(right, top);
+	@include animation(animation_bg_element5, 5s, 0s);
+}
+
+.flask_bottom_eight{
+    position: absolute;
+	@include flask_element(#5c30ae, 100%, 50px, bottom, 218px, right, -95px, 3);
+	@include rotate(-12deg);
+    @include transform_origin(left, top);
+	@include animation(animation_bg_element6, 5s, 0s);
+}
+
+.flask_small{
+
+	width: 200px;
+	height: 230px;
+	
+	.flask_throat{
+	
+		height: 99px;
+		width: 35px;
+		overflow: hidden;
+		
+		position: absolute;
+		top: 0;
+		left: 82px;
+	}
+	
+	.flask_throat_one{
+	
+		background-color: #5c30ae;
+		height: 50px;
+		width: 150px;
+		
+		position: absolute;
+		right: -26px;
+		top: 75px;
+		z-index: 3;
+		
+		@include rotate(24deg);
+		@include transform_origin(right, top);
+	}
+	
+	.flask_throat_two{
+	
+		background-color: #37acdd;
+		height: 25px;
+		width: 75px;
+		
+		position: absolute;
+		right: -30px;
+		top: 37px;
+		z-index: 3;
+		
+		@include transform_origin(right, top);
+	}
+	
+	.flask_throat_three{
+		
+		height: 20px;
+		width: 100%;
+		
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: 3;
+	}
+
+	.flask_throat_four{
+		top: 60px;
+		z-index: 2;
+	}
+	
+	.big_triangle{
+	
+		width: 200px;
+		height: 135px;
+		
+		&:before, &:after{
+			border-top: 135px solid $basic_color;
+		}
+		
+		&:before{
+			border-right: 82px solid transparent;
+		}
+
+		&:after{
+			border-left: 84px solid transparent;
+		}
+	}
+	
+	.flask_bottom_one{
+		border-bottom: 35px solid #3a2481;
+		border-left: 15px solid transparent;
+		border-right: 24px solid transparent;
+	}
+	
+	.flask_bottom_two{
+		border-bottom: 94px solid #4266c0;
+		border-left: 44px solid transparent;
+		border-right: 113px solid transparent;
+	}
+
+	.flask_bottom_five{
+		bottom: -21px;
+		left: 25px;
+	}
+	
+	.flask_bottom_six{
+		height: 90px;
+	}
+	
+	.flask_bottom_seven{
+		bottom: 26px;
+		height: 85px;
+		right: -14px;
+	}
+	
+
+	.flask_bottom_eight{
+		bottom: 107px;
+		height: 20px;
+		right: 0;
+	}
+}
+
+@import 'flask_left.scss';
+@import 'flask_center.scss';
+@import 'flask_right.scss';
+@import 'animation_bg.scss';
+@import 'bubble.scss';
+@import 'animation_bubble.scss';
