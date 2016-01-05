@@ -21,7 +21,7 @@ body{
 
 	overflow: hidden;
     height: 155px;
-	width: 62px;
+	width: 64px;
     
     position: absolute;
 	left: 152px;
@@ -90,18 +90,18 @@ body{
 		top: 0;
 		z-index: 100;
 	}
-
+ 
 	&:before{
 		border-right: 152px solid transparent;
 		left: 0;
 	}
 
 	&:after{
-		border-left: 154px solid transparent;
+		border-left: 152px solid transparent;
 		right: 0;
 	}
 }
-
+ 
 .flask_bottom_one{
 
 	width: 0;
@@ -178,7 +178,7 @@ body{
 	.flask_throat{
 	
 		height: 99px;
-		width: 35px;
+		width: 36px;
 		overflow: hidden;
 		
 		position: absolute;
@@ -245,7 +245,7 @@ body{
 		}
 
 		&:after{
-			border-left: 84px solid transparent;
+			border-left: 82px solid transparent;
 		}
 	}
 	

@@ -15,7 +15,7 @@ body {
 .flask_throat {
   overflow: hidden;
   height: 155px;
-  width: 62px;
+  width: 64px;
   position: absolute;
   left: 152px;
   top: 0;
@@ -139,7 +139,7 @@ body {
 }
 
 .big_triangle:after {
-  border-left: 154px solid transparent;
+  border-left: 152px solid transparent;
   right: 0;
 }
 
@@ -277,7 +277,7 @@ body {
 
 .flask_small .flask_throat {
   height: 99px;
-  width: 35px;
+  width: 36px;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -338,7 +338,7 @@ body {
 }
 
 .flask_small .big_triangle:after {
-  border-left: 84px solid transparent;
+  border-left: 82px solid transparent;
 }
 
 .flask_small .flask_bottom_one {
